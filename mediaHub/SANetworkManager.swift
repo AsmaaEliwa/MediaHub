@@ -48,6 +48,7 @@ class SANetworkManager : NSObject {
             print(data ?? "DATA")
             print(response ?? "RESPONSE")
             print(error ?? "ERROR")
+            
             if data != nil {
                 
                 completion(true,data)

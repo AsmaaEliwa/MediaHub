@@ -7,9 +7,14 @@
 
 import Foundation
  
+struct PhotoResponse: Decodable {
+    let page: Int
+    let perPage: Int?
+    let photos: [ImageModel]
+}
 
-struct ImageModel{
-    let type: String
+struct ImageModel: Decodable{
+    let type: String?
     let id: Int
     let url : String
     let width: Int
@@ -19,7 +24,7 @@ struct ImageModel{
     
 }
 
-struct ImageType {
+struct ImageType: Decodable {
     let original:String
     let medium:String
     let small:String

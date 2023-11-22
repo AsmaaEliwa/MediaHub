@@ -4,38 +4,73 @@
 //
 //  Created by asmaa gamal  on 20/11/2023.
 //
-
 import UIKit
 
 class ImagesViewController: UIViewController {
-let url = "https://api.pexels.com/videos/search?query=nature&per_page=10&orientation=portrait"
+
+    @IBOutlet weak var collectionView: UICollectionView!
+//    @IBOutlet weak var collectionView: UICollectionView!
+    var images: [ImageModel] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        SANetworkManager.shared.getRequest(url: url) { success, data in
-            
-               if success, let data = data {
-            
-                   print(data)
-                   
-               
-               } else {
-                   print("Failed to fetch data.")
-               }
-           }
-   
-       
-        // Do any additional setup after loading the view.
+        setupCollectionView()
+        getUserImages()
     }
+
+    func setupCollectionView() {
+//        collectionView.dataSource = self
+//        collectionView.delegate = self
+        collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: "ImageCell")
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
+    func getUserImages() {
+        SAAPIManager.shared.getUserAPIImages { [weak self] receivedImages, error in
+            if let error = error {
+                print("Error fetching images: \(error)")
+            } else if let receivedImages = receivedImages {
+                self?.images = receivedImages
+                DispatchQueue.main.async {
+                    self?.updateUIWithImages()
+                }
+            }
+        }
+    }
+
+    func updateUIWithImages() {
+        collectionView.reloadData()
+    }
+}
+
+extension ImagesViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as? ImageCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+
+        let imageURL = images[indexPath.item].src.medium
+
+        if let url = URL(string: imageURL) {
+            URLSession.shared.dataTask(with: url) { data, _, error in
+                if let data = data, let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        cell.imageView.image = image
+                    }
+                }
+            }.resume()
+        }
+       
+
+        return cell
+    }
+
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        // Set your desired item size here
+//        return CGSize(width: 100, height: 100)
+//    }
 }

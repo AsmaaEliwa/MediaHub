@@ -61,16 +61,20 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="Rmi-QX-wde">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="Rmi-QX-wde">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cGb-sC-bqE">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cGb-sC-bqE" customClass="ImageCollectionViewCell" customModule="mediaHub" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="SRA-XB-v1E" id="zzB-z3-1mE"/>
+                                    <outlet property="delegate" destination="SRA-XB-v1E" id="l9c-eB-EQj"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YsS-dK-Pe2"/>
@@ -83,6 +87,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="images" image="photo.fill" catalog="system" id="DlF-Fa-zBg"/>
+                    <connections>
+                        <outlet property="collectionView" destination="9eY-OV-yds" id="zoE-17-s06"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kbq-xJ-Gwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +98,7 @@
         <!--videos-->
         <scene sceneID="sYT-DM-xJe">
             <objects>
-                <viewController id="IPe-uA-bvV" sceneMemberID="viewController">
+                <viewController id="IPe-uA-bvV" customClass="VideosViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wm4-2M-jXI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1B-Vo-ef7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2911" y="-499"/>
+            <point key="canvasLocation" x="2910.6870229007632" y="-499.29577464788736"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9wr-19-YMX">
