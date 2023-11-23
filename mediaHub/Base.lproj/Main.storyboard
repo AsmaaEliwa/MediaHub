@@ -43,6 +43,64 @@
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
         </scene>
+        <!--Search-->
+        <scene sceneID="nKx-nL-J3h">
+            <objects>
+                <viewController id="IdA-DP-cuD" customClass="SearchViewController" customModule="mediaHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZJp-SA-axv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Enter Image Type" translatesAutoresizingMaskIntoConstraints="NO" id="gEW-lg-zn0">
+                                <rect key="frame" x="32" y="336" width="329" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="IdA-DP-cuD" id="frr-QH-XWk"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhl-i2-DHx">
+                                <rect key="frame" x="158" y="436" width="78" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Search"/>
+                                <connections>
+                                    <segue destination="84f-ax-qxy" kind="show" identifier="showSearchResult" id="1qK-pm-2OO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2ak-KC-yEZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uhl-i2-DHx" firstAttribute="top" secondItem="gEW-lg-zn0" secondAttribute="bottom" constant="44" id="1Dv-oF-0rk"/>
+                            <constraint firstItem="2ak-KC-yEZ" firstAttribute="trailing" secondItem="Uhl-i2-DHx" secondAttribute="trailing" constant="157" id="3T4-Df-b6J"/>
+                            <constraint firstItem="2ak-KC-yEZ" firstAttribute="trailing" secondItem="gEW-lg-zn0" secondAttribute="trailing" constant="32" id="4zA-LJ-gOO"/>
+                            <constraint firstItem="gEW-lg-zn0" firstAttribute="top" secondItem="2ak-KC-yEZ" secondAttribute="top" constant="233" id="6kF-Li-TFQ"/>
+                            <constraint firstItem="2ak-KC-yEZ" firstAttribute="bottom" secondItem="Uhl-i2-DHx" secondAttribute="bottom" constant="298" id="QIm-0o-e4l"/>
+                            <constraint firstItem="gEW-lg-zn0" firstAttribute="leading" secondItem="2ak-KC-yEZ" secondAttribute="leading" constant="32" id="W4n-dx-0AH"/>
+                            <constraint firstItem="Uhl-i2-DHx" firstAttribute="leading" secondItem="2ak-KC-yEZ" secondAttribute="leading" constant="158" id="hzi-YU-dwx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="kEn-7e-KWT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zD9-cf-UDi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2910.6870229007632" y="1024.6478873239437"/>
+        </scene>
+        <!--Search Result View Controller-->
+        <scene sceneID="vme-Ny-DsX">
+            <objects>
+                <viewController id="84f-ax-qxy" customClass="SearchResultViewController" customModule="mediaHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOe-EY-t85">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Xk6-w0-T0T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qHk-qP-I51"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iWB-g8-sYY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4033" y="1025"/>
+        </scene>
         <!--images-->
         <scene sceneID="m0j-Bt-p5p">
             <objects>
@@ -76,6 +134,14 @@
                                     <outlet property="delegate" destination="SRA-XB-v1E" id="l9c-eB-EQj"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jje-eX-Jdc">
+                                <rect key="frame" x="159" y="687" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="More"/>
+                                <connections>
+                                    <action selector="loadMoreImages:" destination="SRA-XB-v1E" eventType="touchUpInside" id="dCP-wk-4Eo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YsS-dK-Pe2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,7 +149,11 @@
                             <constraint firstItem="YsS-dK-Pe2" firstAttribute="bottom" secondItem="9eY-OV-yds" secondAttribute="bottom" constant="47" id="Abf-Sz-cRw"/>
                             <constraint firstItem="9eY-OV-yds" firstAttribute="leading" secondItem="YsS-dK-Pe2" secondAttribute="leading" constant="16" id="DS5-C8-tBS"/>
                             <constraint firstItem="YsS-dK-Pe2" firstAttribute="trailing" secondItem="9eY-OV-yds" secondAttribute="trailing" constant="16" id="PKf-oZ-ZTa"/>
+                            <constraint firstItem="jje-eX-Jdc" firstAttribute="leading" secondItem="YsS-dK-Pe2" secondAttribute="leading" constant="159" id="YlC-oU-VSm"/>
+                            <constraint firstItem="YsS-dK-Pe2" firstAttribute="trailing" secondItem="jje-eX-Jdc" secondAttribute="trailing" constant="159" id="l7R-U3-iGr"/>
+                            <constraint firstItem="YsS-dK-Pe2" firstAttribute="bottom" secondItem="jje-eX-Jdc" secondAttribute="bottom" constant="47" id="moV-x8-xP2"/>
                             <constraint firstItem="9eY-OV-yds" firstAttribute="top" secondItem="YsS-dK-Pe2" secondAttribute="top" constant="54" id="pbQ-td-OPJ"/>
+                            <constraint firstItem="jje-eX-Jdc" firstAttribute="top" secondItem="YsS-dK-Pe2" secondAttribute="top" constant="584" id="qcK-Va-daP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="images" image="photo.fill" catalog="system" id="DlF-Fa-zBg"/>
@@ -124,6 +194,7 @@
                     <connections>
                         <segue destination="IPe-uA-bvV" kind="relationship" relationship="viewControllers" id="LIg-ky-orN"/>
                         <segue destination="SRA-XB-v1E" kind="relationship" relationship="viewControllers" id="nhO-rY-lgV"/>
+                        <segue destination="IdA-DP-cuD" kind="relationship" relationship="viewControllers" id="oIS-kD-Oe7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ThO-De-eJ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,6 +221,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="photo.fill" catalog="system" width="128" height="93"/>
         <image name="video" catalog="system" width="128" height="82"/>
         <systemColor name="systemBackgroundColor">

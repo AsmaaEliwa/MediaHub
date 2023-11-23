@@ -47,34 +47,93 @@ class SAAPIManager: NSObject {
     }
     
     
-    func getUserAPIImages(completion: @escaping ([ImageModel]?, Error?) -> Void) {
-        let decoder = JSONDecoder()
-        let url = "https://api.pexels.com/v1/search?query=nature&per_page=10&page=1"
+//    func getUserAPIImages(completion: @escaping ([ImageModel]?, Error?) -> Void) {
+//        let decoder = JSONDecoder()
+//        let url = "https://api.pexels.com/v1/search?query=nature&per_page=10&page=1"
+//
+//        SANetworkManager.shared.getRequest(url: url) { dataResult, data in
+//            do {
+//                guard let jsonData = data else {
+//                    completion(nil, NSError(domain: "NoData", code: 0, userInfo: nil))
+//                    return
+//                }
+//
+//                let result = try decoder.decode(PhotoResponse.self, from: jsonData)
+//                completion(result.photos, nil)
+//            } catch {
+//                print(error)
+//                completion(nil, error)
+//            }
+//        }
+//    }
+    func getAllAPIImages(completion: @escaping ([ImageModel]?, Error?) -> Void) {
+        var allImages: [ImageModel] = []
+        var currentPage = 1
+        let perPage = 5 // Adjust the number of images per page
+        let baseURL = "https://api.pexels.com/v1/search?query=nature&per_page=\(perPage)&page="
 
-        SANetworkManager.shared.getRequest(url: url) { dataResult, data in
-            do {
+        func fetchImages(forPage page: Int) {
+            let urlString = baseURL + "\(page)"
+            SANetworkManager.shared.getRequest(url: urlString) { dataResult, data in
                 guard let jsonData = data else {
                     completion(nil, NSError(domain: "NoData", code: 0, userInfo: nil))
                     return
                 }
+                
+                do {
+                    let decoder = JSONDecoder()
+                    let result = try decoder.decode(PhotoResponse.self, from: jsonData)
+                    allImages.append(contentsOf: result.photos)
+                    
+                    if let nextPage = result.page, let totalResults = result.total_results  {
+                        let totalPages = (totalResults + perPage - 1) / perPage // Calculate total number of pages
+                        if nextPage < totalPages {
+                            print("Current Page: \(nextPage)")
+                            print("Total Pages: \(totalPages)")
+                            fetchImages(forPage: nextPage + 1)
+                            
+                        } else {
+                            completion(allImages, nil)
+                        }
+                    }
 
+
+                } catch {
+                    print(error)
+                    completion(nil, error)
+                }
+            }
+        }
+        
+        fetchImages(forPage: currentPage)
+    }
+
+
+
+
+
+
+    func getImagesForPage(_ page: Int, perPage: Int, completion: @escaping ([ImageModel]?, Error?) -> Void) {
+        let baseURL = "https://api.pexels.com/v1/search?query=nature&per_page=\(perPage)&page=\(page)"
+        let decoder = JSONDecoder()
+        
+        SANetworkManager.shared.getRequest(url: baseURL) { dataResult, data in
+            guard let jsonData = data else {
+                completion(nil, NSError(domain: "NoData", code: 0, userInfo: nil))
+                return
+            }
+
+            do {
                 let result = try decoder.decode(PhotoResponse.self, from: jsonData)
-                completion(result.photos, nil)
+                let images = result.photos
+                completion(images, nil)
             } catch {
                 print(error)
                 completion(nil, error)
             }
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
     

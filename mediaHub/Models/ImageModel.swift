@@ -8,9 +8,11 @@
 import Foundation
  
 struct PhotoResponse: Decodable {
-    let page: Int
+    let total_results:Int?
+    let page: Int?
     let perPage: Int?
     let photos: [ImageModel]
+    let next_page : String?
 }
 
 struct ImageModel: Decodable{
