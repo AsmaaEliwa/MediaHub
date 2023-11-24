@@ -587,5 +587,193 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3C508B3-B7F7-4C90-B3E3-2AD64F56BA09"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/SearchResultViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "SearchResultViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F5B0877-187A-44D4-99E6-4623264A7BEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/SearchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "performSearch(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9F5B0877-187A-44D4-99E6-4623264A7BEC - c4d86da4ad775304"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;mediaHub.ImageModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.SearchViewController.performSearch(with: Swift.String) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "299">
+               </Location>
+               <Location
+                  uuid = "9F5B0877-187A-44D4-99E6-4623264A7BEC - c4d86da4ad775304"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;mediaHub.ImageModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.SearchViewController.performSearch(with: Swift.String) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "766">
+               </Location>
+               <Location
+                  uuid = "9F5B0877-187A-44D4-99E6-4623264A7BEC - c4d86da4ad77503e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;mediaHub.ImageModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.SearchViewController.performSearch(with: Swift.String) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "299">
+               </Location>
+               <Location
+                  uuid = "9F5B0877-187A-44D4-99E6-4623264A7BEC - c4d86da4ad77503e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;mediaHub.ImageModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.SearchViewController.performSearch(with: Swift.String) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "766">
+               </Location>
+               <Location
+                  uuid = "9F5B0877-187A-44D4-99E6-4623264A7BEC - c4d86da4ad77503e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;mediaHub.ImageModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.SearchViewController.performSearch(with: Swift.String) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "401">
+               </Location>
+               <Location
+                  uuid = "9F5B0877-187A-44D4-99E6-4623264A7BEC - c4d86da4ad77503e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;mediaHub.ImageModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.SearchViewController.performSearch(with: Swift.String) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "898">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F1F31CD-8BB6-4325-99AE-A252DE8A2CF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/SearchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "performSearch(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F1F31CD-8BB6-4325-99AE-A252DE8A2CF5 - 631ffa15d2b8c5da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.SearchViewController.performSearch(with: Swift.String) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "209">
+               </Location>
+               <Location
+                  uuid = "0F1F31CD-8BB6-4325-99AE-A252DE8A2CF5 - c4d86da4ad775178"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;mediaHub.ImageModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.SearchViewController.performSearch(with: Swift.String) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1242">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C694E5C9-7B44-4F75-9B2D-24C7916D8026"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/SearchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
