@@ -198,14 +198,43 @@
         <!--videos-->
         <scene sceneID="sYT-DM-xJe">
             <objects>
-                <viewController id="IPe-uA-bvV" customClass="VideosViewController" sceneMemberID="viewController">
+                <viewController id="IPe-uA-bvV" customClass="VideosViewController" customModule="mediaHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wm4-2M-jXI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VSq-Pa-4jM">
+                                <rect key="frame" x="16" y="123" width="361" height="629"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" id="Qs3-yo-ziC">
+                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qs3-yo-ziC" id="sAs-Ih-Pmd">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="IPe-uA-bvV" id="Rrs-oP-ck6"/>
+                                    <outlet property="delegate" destination="IPe-uA-bvV" id="roh-n0-jd9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3Kn-rq-90h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VSq-Pa-4jM" firstAttribute="top" secondItem="3Kn-rq-90h" secondAttribute="top" constant="20" id="3Ln-wp-3TA"/>
+                            <constraint firstItem="3Kn-rq-90h" firstAttribute="bottom" secondItem="VSq-Pa-4jM" secondAttribute="bottom" constant="17" id="Eie-sl-5xj"/>
+                            <constraint firstItem="VSq-Pa-4jM" firstAttribute="leading" secondItem="3Kn-rq-90h" secondAttribute="leading" constant="16" id="G5R-yU-46R"/>
+                            <constraint firstItem="3Kn-rq-90h" firstAttribute="trailing" secondItem="VSq-Pa-4jM" secondAttribute="trailing" constant="16" id="OK2-02-Hoq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="videos" image="video" catalog="system" id="8kf-qM-63u"/>
+                    <connections>
+                        <outlet property="videosTableView" destination="VSq-Pa-4jM" id="mpD-aY-WYQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1B-Vo-ef7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

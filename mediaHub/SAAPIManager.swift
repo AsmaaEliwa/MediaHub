@@ -75,7 +75,29 @@ class SAAPIManager: NSObject {
         
         
         
+    func getVideosForPage(_ page: Int, perPage: Int, completion: @escaping ([VideoModel]?, Error?) -> Void) {
+
+        let baseURL = "https://api.pexels.com/videos/search?query=nature&per_page=\(perPage)&page=\(page)"
+        let decoder = JSONDecoder()
         
+        SANetworkManager.shared.getRequest(url: baseURL) { dataResult, data in
+            guard let jsonData = data else {
+                completion(nil, NSError(domain: "NoData", code: 0, userInfo: nil))
+                return
+            }
+            
+            do {
+                let result = try decoder.decode(VideoResponse.self, from: jsonData)
+                let videos = result.videos
+                completion(videos, nil)
+                
+            } catch {
+                print(error)
+                
+                completion(nil, error)
+            }
+        }
+    }
         
         
         func searchForImages(with query: String, completion: @escaping ([ImageModel]?, Error?) -> Void) {
@@ -116,7 +138,26 @@ class SAAPIManager: NSObject {
         
         
         
-        
+    func downloadVideo(from url: URL, completion: @escaping (URL?, Error?) -> Void) {
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let videoName = "video_name.mp4" // You can name it whatever you like
+        let fileURL = documentsURL.appendingPathComponent(videoName)
+
+        let downloadTask = URLSession.shared.downloadTask(with: url) { (tempLocalURL, response, error) in
+            if let tempLocalURL = tempLocalURL, error == nil {
+                do {
+                    try FileManager.default.moveItem(at: tempLocalURL, to: fileURL)
+                    completion(fileURL, nil)
+                } catch {
+                    completion(nil, error)
+                }
+            } else {
+                completion(nil, error)
+            }
+        }
+        downloadTask.resume()
+    }
+
         
         
         
