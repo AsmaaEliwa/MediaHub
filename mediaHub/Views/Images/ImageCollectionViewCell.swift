@@ -24,7 +24,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     }
 
     private func setupImageView() {
-        // Add and configure imageView in the cell
+
         addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

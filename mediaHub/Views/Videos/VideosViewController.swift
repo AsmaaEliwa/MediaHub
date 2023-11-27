@@ -42,7 +42,7 @@ class VideosViewController: UIViewController {
     func saveVideoLocally(videoURL: URL, videoID: Int) {
         // Existing code...
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let videosFolderURL = documentsURL.appendingPathComponent("videosForMyApp", isDirectory: true)
+        let videosFolderURL = documentsURL.appendingPathComponent("videosForMyApp", isDirectory: true)
         let uniqueString = UUID().uuidString
         let videoName = "video_\(videoID)_\(uniqueString).mp4" // Unique filename using UUID
         let fileURL = videosFolderURL.appendingPathComponent(videoName)
@@ -56,23 +56,27 @@ class VideosViewController: UIViewController {
                 print("Video downloaded and saved at: \(savedURL)")
 
                 do {
-                    // Handle file existence conflict
+                    // Check if file exists at destination URL
+                    let finalFileURL: URL
+                    var finalVideoName = videoName
+                    
                     if FileManager.default.fileExists(atPath: fileURL.path) {
                         let newUniqueString = UUID().uuidString
-                        let newVideoName = "video_\(videoID)_\(newUniqueString).mp4"
-                        let newFileURL = videosFolderURL.appendingPathComponent(newVideoName)
-                        try FileManager.default.moveItem(at: savedURL, to: newFileURL)
-                        self.videoURLs[videoID] = newFileURL // Store the URL based on video ID
-                    } else {
-                        try FileManager.default.moveItem(at: savedURL, to: fileURL)
-                        self.videoURLs[videoID] = fileURL // Store the URL based on video ID
+                        finalVideoName = "video_\(videoID)_\(newUniqueString).mp4"
                     }
+
+                    finalFileURL = videosFolderURL.appendingPathComponent(finalVideoName)
+
+                    try FileManager.default.moveItem(at: savedURL, to: finalFileURL)
+                    self.videoURLs[videoID] = finalFileURL // Store the URL based on video ID
                 } catch {
                     print("Error moving file: \(error)")
+                    
                 }
             }
         }
     }
+
 
 
     func loadVideos() {
@@ -108,7 +112,9 @@ extension VideosViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as? VideoTableViewCell,
               let video = videos?[indexPath.row],
+              
               let videoURL = videoURLs[video.id] else {
+            
             return UITableViewCell()
         }
         

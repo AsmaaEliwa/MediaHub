@@ -18,34 +18,34 @@ class SAAPIManager: NSObject {
         super.init()
     }
     
-    func getUserAPIVidios(completion: @escaping ([VideoModel]?, Error?) -> Void){
-        var vidos: [VideoModel] = []
-        let decoder = JSONDecoder()
-        let url = "https://api.pexels.com/videos/search?query=nature&per_page=10&page=1"
-        
-        SANetworkManager.shared.getRequest(url: url, completion: {dataResult, data in
-            
-            
-            do {
-                guard let jsonData = data else {
-                    completion(nil, NSError(domain: "NoData", code: 0, userInfo: nil))
-                    return
-                }
-                
-                let result = try decoder.decode(PhotoResponse.self, from: jsonData)
-                
-                //                completion( result, nil)
-            } catch {
-                print(error)
-                completion(nil, error)
-            }
-        })
-        
-        
-        
-        
-    }
-    
+//    func getUserAPIVidios(completion: @escaping ([VideoModel]?, Error?) -> Void){
+//        var vidos: [VideoModel] = []
+//        let decoder = JSONDecoder()
+//        let url = "https://api.pexels.com/videos/search?query=nature&per_page=10&page=1"
+//        
+//        SANetworkManager.shared.getRequest(url: url, completion: {dataResult, data in
+//            
+//            
+//            do {
+//                guard let jsonData = data else {
+//                    completion(nil, NSError(domain: "NoData", code: 0, userInfo: nil))
+//                    return
+//                }
+//                
+//                let result = try decoder.decode(PhotoResponse.self, from: jsonData)
+//                
+//                //                completion( result, nil)
+//            } catch {
+//                print(error)
+//                completion(nil, error)
+//            }
+//        })
+//        
+//        
+//        
+//        
+//    }
+//    
        
         
         

@@ -45,9 +45,9 @@ class SANetworkManager : NSObject {
         
         let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             
-            print(data ?? "DATA")
-            print(response ?? "RESPONSE")
-            print(error ?? "ERROR")
+//            print(data ?? "DATA")
+//            print(response ?? "RESPONSE")
+//            print(error ?? "ERROR")
             
             if data != nil {
                 
