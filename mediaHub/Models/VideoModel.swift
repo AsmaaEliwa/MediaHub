@@ -12,9 +12,7 @@ struct VideoResponse: Decodable {
     let videos: [VideoModel]
     let totalResults: Int?
     
-//    enum CodingKeys: String, CodingKey {
-//        case page, perPage, videos, totalResults = "total_results"
-//    }
+
 }
 struct VideoModel: Decodable {
     let type: String?

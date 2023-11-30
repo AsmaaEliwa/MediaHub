@@ -80,26 +80,26 @@ class VideosViewController: UIViewController {
 
 
     func loadVideos() {
-           SAAPIManager.shared.getVideosForPage(currentPage, perPage: perPage) { [weak self] videos, error in
-               guard let strongSelf = self else { return }
-
-               if let error = error {
-                   print("Error fetching videos: \(error)")
-               } else if let newVideos = videos {
-                   strongSelf.videos = newVideos // Update videos array
-
-                   DispatchQueue.main.async {
-                       strongSelf.videosTableView.reloadData()
-                   }
-
-                   // Download and save videos locally
-                   for video in newVideos {
-                       if let videoURL = URL(string: video.url) {
-                           strongSelf.saveVideoLocally(videoURL: videoURL, videoID: video.id)
-                       }
-                   }
-               }
-           }
+//           SAAPIManager.shared.getVideosForPage(currentPage, perPage: perPage) { [weak self] videos, error in
+//               guard let strongSelf = self else { return }
+//
+//               if let error = error {
+//                   print("Error fetching videos: \(error)")
+//               } else if let newVideos = videos {
+//                   strongSelf.videos = newVideos // Update videos array
+//
+//                   DispatchQueue.main.async {
+//                       strongSelf.videosTableView.reloadData()
+//                   }
+//
+//                   // Download and save videos locally
+//                   for video in newVideos {
+//                       if let videoURL = URL(string: video.url) {
+//                           strongSelf.saveVideoLocally(videoURL: videoURL, videoID: video.id)
+//                       }
+//                   }
+//               }
+//           }
        }
     // Your displayFolderContent function...
     

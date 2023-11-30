@@ -103,7 +103,7 @@ class SAAPIManager: NSObject {
         func searchForImages(with query: String, completion: @escaping ([ImageModel]?, Error?) -> Void) {
             let headers =  "L0Gh7aj9kweedghPsZmFHyOQeNPzkOUWHi0ArsfXxP9E4HPv6RZsFHGc"
             let perPage = 20 // Adjust the number of results per page
-            let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+            let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""  // ensure the safity of the query
             let baseURL = "https://api.pexels.com/v1/search?query=\(encodedQuery)&per_page=\(perPage)"
             
             // Set up your API request with appropriate headers and authentication
@@ -135,6 +135,28 @@ class SAAPIManager: NSObject {
         
         
         
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
         
         
         

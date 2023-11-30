@@ -7,7 +7,7 @@
 
 import Foundation
  
-struct PhotoResponse: Decodable {
+struct PhotoResponse: Codable {
     let total_results:Int?
     let page: Int?
     let perPage: Int?
@@ -15,7 +15,7 @@ struct PhotoResponse: Decodable {
     let next_page : String?
 }
 
-struct ImageModel: Decodable{
+struct ImageModel: Codable{
     let type: String?
     let id: Int
     let url : String
@@ -26,7 +26,7 @@ struct ImageModel: Decodable{
     
 }
 
-struct ImageType: Decodable {
+struct ImageType: Codable {
     let original:String
     let medium:String
     let small:String

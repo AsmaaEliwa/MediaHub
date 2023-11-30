@@ -6,10 +6,12 @@
 //
 import UIKit
 
-class ImagesViewController: UIViewController {
+class ImagesViewController: UIViewController, UITabBarDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var tabBar: UITabBar!
+    @IBOutlet weak var switchToFavoriteTab: UITabBarItem!
     var images: [ImageModel]? = []
     var currentPage = 1
     let perPage = 20
@@ -18,6 +20,7 @@ class ImagesViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         loadImages()
+//        tabBar.delegate = self
     }
 
     func setupCollectionView() {
@@ -83,5 +86,12 @@ extension ImagesViewController: UICollectionViewDataSource, UICollectionViewDele
         
         
         return cell
+    }
+}
+extension ImagesViewController {
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item == switchToFavoriteTab { // Check if the selected item matches your 'FavImagesViewController' tab bar item
+            performSegue(withIdentifier: "ToFavImages", sender: self)
+        }
     }
 }
