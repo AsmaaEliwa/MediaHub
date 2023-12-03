@@ -13,10 +13,10 @@ import AVKit
 //}
 
 class VideosViewController: UIViewController {
-//    func didTapVideoCell(with url: URL) {
-//        
-//    }
-
+    //    func didTapVideoCell(with url: URL) {
+    //
+    //    }
+    
     @IBOutlet weak var videosTableView: UITableView!
     
     var videos: [VideoModel]? = []
@@ -35,10 +35,10 @@ class VideosViewController: UIViewController {
     }
     
     func setupTableView() {
-            videosTableView.register(VideoTableViewCell.self, forCellReuseIdentifier: "VideoCell")
+        videosTableView.register(VideoTableViewCell.self, forCellReuseIdentifier: "VideoCell")
         
-        }
- 
+    }
+    
     func saveVideoLocally(videoURL: URL, videoID: Int) {
         // Existing code...
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -46,15 +46,15 @@ class VideosViewController: UIViewController {
         let uniqueString = UUID().uuidString
         let videoName = "video_\(videoID)_\(uniqueString).mp4" // Unique filename using UUID
         let fileURL = videosFolderURL.appendingPathComponent(videoName)
-
+        
         SAAPIManager.shared.downloadVideo(from: videoURL) { [weak self] (savedURL, error) in
             guard let self = self else { return }
-
+            
             if let error = error {
                 print("Error downloading video: \(error)")
             } else if let savedURL = savedURL {
                 print("Video downloaded and saved at: \(savedURL)")
-
+                
                 do {
                     // Check if file exists at destination URL
                     let finalFileURL: URL
@@ -64,9 +64,9 @@ class VideosViewController: UIViewController {
                         let newUniqueString = UUID().uuidString
                         finalVideoName = "video_\(videoID)_\(newUniqueString).mp4"
                     }
-
+                    
                     finalFileURL = videosFolderURL.appendingPathComponent(finalVideoName)
-
+                    
                     try FileManager.default.moveItem(at: savedURL, to: finalFileURL)
                     self.videoURLs[videoID] = finalFileURL // Store the URL based on video ID
                 } catch {
@@ -76,33 +76,34 @@ class VideosViewController: UIViewController {
             }
         }
     }
-
-
-
-    func loadVideos() {
-//           SAAPIManager.shared.getVideosForPage(currentPage, perPage: perPage) { [weak self] videos, error in
-//               guard let strongSelf = self else { return }
-//
-//               if let error = error {
-//                   print("Error fetching videos: \(error)")
-//               } else if let newVideos = videos {
-//                   strongSelf.videos = newVideos // Update videos array
-//
-//                   DispatchQueue.main.async {
-//                       strongSelf.videosTableView.reloadData()
-//                   }
-//
-//                   // Download and save videos locally
-//                   for video in newVideos {
-//                       if let videoURL = URL(string: video.url) {
-//                           strongSelf.saveVideoLocally(videoURL: videoURL, videoID: video.id)
-//                       }
-//                   }
-//               }
-//           }
-       }
-    // Your displayFolderContent function...
     
+    
+    
+    func loadVideos() {
+        SAAPIManager.shared.getVideosForPage(currentPage, perPage: perPage) { [weak self] videos, error in
+            guard let strongSelf = self else { return }
+            
+            if let error = error {
+                print("Error fetching videos: \(error)")
+            } else if let newVideos = videos {
+                strongSelf.videos = newVideos // Update videos array
+                
+                DispatchQueue.main.async {
+                    strongSelf.videosTableView.reloadData()
+                }
+                //
+                //                   // Download and save videos locally
+                //                   for video in newVideos {
+                //                       if let videoURL = URL(string: video.url) {
+                //                           strongSelf.saveVideoLocally(videoURL: videoURL, videoID: video.id)
+                //                       }
+                //                   }
+                //               }
+                //           }
+            }
+            // Your displayFolderContent function...
+        }
+    }
 }
 extension VideosViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -110,19 +111,48 @@ extension VideosViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as? VideoTableViewCell,
-              let video = videos?[indexPath.row],
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell", for: indexPath) as? VideoTableViewCell,
+              let video = videos?[indexPath.row]
               
-              let videoURL = videoURLs[video.id] else {
+              else {
             
             return UITableViewCell()
         }
-        
-        cell.videoID = video.id // Assign video ID
-        cell.setupPlayer(videoURL: videoURL)
-        
+
+//        cell.videoID = video.id // Assign video ID
+//        cell.setupPlayer(videoURL: videoURL)
+
+        // Check if there are pictures available
+        if let firstPicture = video.video_pictures.first, let imageURL = URL(string: firstPicture.picture) {
+            
+            cell.videoImageView.loadImage(from: imageURL)
+        } else {
+            print("No pictures available for this video")
+            
+        }
+
         return cell
     }
+
     
     // Other UITableViewDelegate methods can be implemented here...
+}
+extension UIImageView {
+    func loadImage(from url: URL) {
+        URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+            guard let self = self else { return }
+            
+            if let error = error {
+                print("Error loading image: \(error.localizedDescription)")
+                
+                return
+            }
+            
+            if let data = data, let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.image = image
+                }
+            }
+        }.resume()
+    }
 }

@@ -8,6 +8,7 @@
 import UIKit
 import AVKit
 class VideoTableViewCell: UITableViewCell {
+    @IBOutlet weak var videoImageView: UIImageView!
     var player: AVPlayer?
     var playerLayer: AVPlayerLayer?
     var videoID: Int?
