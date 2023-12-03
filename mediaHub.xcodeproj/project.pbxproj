@@ -33,6 +33,7 @@
 		7FA2DF202B18933E008BDBD2 /* FavImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2DF1C2B18933E008BDBD2 /* FavImage+CoreDataProperties.swift */; };
 		7FA2DF242B189408008BDBD2 /* DataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2DF232B189408008BDBD2 /* DataManger.swift */; };
 		7FA2DF262B189904008BDBD2 /* FavImagesSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2DF252B189904008BDBD2 /* FavImagesSwiftUIView.swift */; };
+		7FAC40A92B1CC92C00480909 /* FavVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC40A82B1CC92C00480909 /* FavVideosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		7FA2DF1C2B18933E008BDBD2 /* FavImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavImage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7FA2DF232B189408008BDBD2 /* DataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManger.swift; sourceTree = "<group>"; };
 		7FA2DF252B189904008BDBD2 /* FavImagesSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavImagesSwiftUIView.swift; sourceTree = "<group>"; };
+		7FAC40A82B1CC92C00480909 /* FavVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavVideosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				7F71928B2B1137B700702F01 /* VideoCollectionViewCell.swift */,
 				7F71928D2B1141D100702F01 /* VideosViewController.swift */,
 				7F7192912B1272F900702F01 /* VideoTableViewCell.swift */,
+				7FAC40A82B1CC92C00480909 /* FavVideosViewController.swift */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				7F7192802B0E465700702F01 /* ImageCollectionViewCell.swift in Sources */,
 				7FA2DF1E2B18933E008BDBD2 /* FavVideo+CoreDataProperties.swift in Sources */,
 				7FA2DF202B18933E008BDBD2 /* FavImage+CoreDataProperties.swift in Sources */,
+				7FAC40A92B1CC92C00480909 /* FavVideosViewController.swift in Sources */,
 				7F7E94152B0BF1BF0037DB9D /* ImageModel.swift in Sources */,
 				7F71928C2B1137B700702F01 /* VideoCollectionViewCell.swift in Sources */,
 				7F71927E2B0C1F3D00702F01 /* SAAPIManager.swift in Sources */,

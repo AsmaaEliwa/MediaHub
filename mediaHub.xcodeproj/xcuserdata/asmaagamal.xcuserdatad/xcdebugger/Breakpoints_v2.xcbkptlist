@@ -1626,8 +1626,8 @@
             filePath = "mediaHub/Views/Videos/VideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "loadVideos()"
             landmarkType = "7">
             <Locations>
@@ -1674,8 +1674,8 @@
             filePath = "mediaHub/Views/Videos/VideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -1722,8 +1722,8 @@
             filePath = "mediaHub/Views/Videos/VideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -1785,8 +1785,8 @@
             filePath = "mediaHub/Views/Videos/VideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1801,8 +1801,8 @@
             filePath = "mediaHub/Views/Videos/VideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1817,8 +1817,8 @@
             filePath = "mediaHub/Views/Videos/VideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "loadImage(from:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1833,8 +1833,8 @@
             filePath = "mediaHub/Views/Videos/VideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1849,9 +1849,665 @@
             filePath = "mediaHub/Views/Videos/VideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE394795-E977-4F73-8CCC-2FE51528DE9B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/VideosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "tabBar(_:didSelect:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85BD396B-7623-49D3-BC64-B6037C802130"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/DataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "addVideoToFav(video:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "85BD396B-7623-49D3-BC64-B6037C802130 - d89da34e7e5cdc13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in mediaHub.DataManger.addVideoToFav(video: mediaHub.VideoModel) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "253">
+               </Location>
+               <Location
+                  uuid = "85BD396B-7623-49D3-BC64-B6037C802130 - d89da34e7e5cdc32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in mediaHub.DataManger.addVideoToFav(video: mediaHub.VideoModel) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "253">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "941865BA-7CCD-4643-B38F-8AB4C9279D93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/DataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "addVideoToFav(video:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "941865BA-7CCD-4643-B38F-8AB4C9279D93 - 18c4ba0f0a17169a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.DataManger.addVideoToFav(video: mediaHub.VideoModel) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "941865BA-7CCD-4643-B38F-8AB4C9279D93 - 18c4ba0f0a1716bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.DataManger.addVideoToFav(video: mediaHub.VideoModel) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD040428-F5EB-4543-BBAF-1E22FF4C749C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "VideoTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DD040428-F5EB-4543-BBAF-1E22FF4C749C - 258f32441a63ea1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoTableViewCell.starButtonTapped() -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "575">
+               </Location>
+               <Location
+                  uuid = "DD040428-F5EB-4543-BBAF-1E22FF4C749C - 258f32441a63ea1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoTableViewCell.starButtonTapped() -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "203">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3332BEBF-C195-413B-9FA8-490BE2FAF7D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "VideoTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3332BEBF-C195-413B-9FA8-490BE2FAF7D3 - 258f32441a63e1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoTableViewCell.starButtonTapped() -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "1073">
+               </Location>
+               <Location
+                  uuid = "3332BEBF-C195-413B-9FA8-490BE2FAF7D3 - 258f32441a63e7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoTableViewCell.starButtonTapped() -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "2603">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "335AD6C0-7A6E-45D2-8733-567369572DBE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "VideoTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "335AD6C0-7A6E-45D2-8733-567369572DBE - 258f32441a63fb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoTableViewCell.starButtonTapped() -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "2410">
+               </Location>
+               <Location
+                  uuid = "335AD6C0-7A6E-45D2-8733-567369572DBE - 258f32441a63f98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoTableViewCell.starButtonTapped() -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1005">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7943E71F-C2C1-420C-A4C6-CE45A7D2637C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "VideoTableViewCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAB57391-BBF3-431E-9A6E-B35F92555988"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "VideoTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DAB57391-BBF3-431E-9A6E-B35F92555988 - 258f32441a63e3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoTableViewCell.starButtonTapped() -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "858">
+               </Location>
+               <Location
+                  uuid = "DAB57391-BBF3-431E-9A6E-B35F92555988 - 258f32441a63e3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoTableViewCell.starButtonTapped() -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "722">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D42E7F0-8578-465E-9F44-8A6A991C345A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/VideosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "starButtonTapped(inCell:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3D42E7F0-8578-465E-9F44-8A6A991C345A - 4b8957c496b2e5ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideosViewController.starButtonTapped(inCell: mediaHub.VideoTableViewCell) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "170"
+                  endingLineNumber = "170"
+                  offsetFromSymbolStart = "665">
+               </Location>
+               <Location
+                  uuid = "3D42E7F0-8578-465E-9F44-8A6A991C345A - 4b8957c496b2e591"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideosViewController.starButtonTapped(inCell: mediaHub.VideoTableViewCell) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "213">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A18F95C2-16F2-41A3-B374-35A524CBECF1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/VideosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "starButtonTapped(inCell:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A18F95C2-16F2-41A3-B374-35A524CBECF1 - 4b8957c496b2e4f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideosViewController.starButtonTapped(inCell: mediaHub.VideoTableViewCell) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "176"
+                  endingLineNumber = "176"
+                  offsetFromSymbolStart = "1720">
+               </Location>
+               <Location
+                  uuid = "A18F95C2-16F2-41A3-B374-35A524CBECF1 - 4b8957c496b2e515"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideosViewController.starButtonTapped(inCell: mediaHub.VideoTableViewCell) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/VideosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "1957">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45EC962A-47FD-476C-8504-4F906B4A4619"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/DataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "addVideoToFav(video:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "45EC962A-47FD-476C-8504-4F906B4A4619 - d89da34e7e5cdd1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in mediaHub.DataManger.addVideoToFav(video: mediaHub.VideoModel) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "1188">
+               </Location>
+               <Location
+                  uuid = "45EC962A-47FD-476C-8504-4F906B4A4619 - d89da34e7e5cdd3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in mediaHub.DataManger.addVideoToFav(video: mediaHub.VideoModel) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "853ABB3A-7F72-41A4-A3BF-DE46087E8947"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/DataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "addVideoToFav(video:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "853ABB3A-7F72-41A4-A3BF-DE46087E8947 - d89da34e7e5cdea7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in mediaHub.DataManger.addVideoToFav(video: mediaHub.VideoModel) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "1306">
+               </Location>
+               <Location
+                  uuid = "853ABB3A-7F72-41A4-A3BF-DE46087E8947 - d89da34e7e5cde61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in mediaHub.DataManger.addVideoToFav(video: mediaHub.VideoModel) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "1252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80B10A0B-A0E2-4259-AA79-0DEC04B6721E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/FavVideosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "FavVideosViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B51A0E3-E40E-4419-B97E-FDCC89C9BF71"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/DataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "addVideoToFav(video:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2E2802E-A33D-4E93-8998-9C8282AE204F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/APIDataManger/VideoManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "saveVideoLocally(videoURL:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2E2802E-A33D-4E93-8998-9C8282AE204F - ad539513a0691443"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.VideoManger.saveVideoLocally(videoURL: Foundation.URL, completion: (Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/APIDataManger/VideoManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "1193">
+               </Location>
+               <Location
+                  uuid = "C2E2802E-A33D-4E93-8998-9C8282AE204F - 9bfc3ee14f001a89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.VideoManger.saveVideoLocally(videoURL: Foundation.URL, completion: (Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/APIDataManger/VideoManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "399">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D95D2D4-A5E3-420C-BE3E-D977F7C2C53F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/APIDataManger/VideoManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "saveVideoLocally(videoURL:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4D95D2D4-A5E3-420C-BE3E-D977F7C2C53F - 9bfc3ee14f001ad7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.VideoManger.saveVideoLocally(videoURL: Foundation.URL, completion: (Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/APIDataManger/VideoManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "566">
+               </Location>
+               <Location
+                  uuid = "4D95D2D4-A5E3-420C-BE3E-D977F7C2C53F - 9bfc3ee14f001915"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in mediaHub.VideoManger.saveVideoLocally(videoURL: Foundation.URL, completion: (Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/APIDataManger/VideoManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "566">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85BB7B2C-5651-4B31-8CF4-190E274D8A24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/FavVideosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "playVideo(at:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

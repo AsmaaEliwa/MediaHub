@@ -300,24 +300,99 @@
                                     <outlet property="delegate" destination="IPe-uA-bvV" id="roh-n0-jd9"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHk-W3-b4w">
+                                <rect key="frame" x="159" y="734" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="More"/>
+                                <connections>
+                                    <action selector="moreVideos:" destination="IPe-uA-bvV" eventType="touchUpInside" id="H7f-Je-G7Q"/>
+                                </connections>
+                            </button>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0Y-34-FBH">
+                                <rect key="frame" x="0.0" y="103" width="393" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="cTc-n3-xG6"/>
+                                    <tabBarItem systemItem="more" id="P5e-P7-l7e"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="IPe-uA-bvV" id="XCS-6n-ve9"/>
+                                </connections>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Kn-rq-90h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="O0Y-34-FBH" firstAttribute="trailing" secondItem="3Kn-rq-90h" secondAttribute="trailing" id="2cC-sd-amw"/>
                             <constraint firstItem="VSq-Pa-4jM" firstAttribute="top" secondItem="3Kn-rq-90h" secondAttribute="top" constant="20" id="3Ln-wp-3TA"/>
+                            <constraint firstItem="O0Y-34-FBH" firstAttribute="leading" secondItem="3Kn-rq-90h" secondAttribute="leading" id="BEJ-EO-aGM"/>
                             <constraint firstItem="3Kn-rq-90h" firstAttribute="bottom" secondItem="VSq-Pa-4jM" secondAttribute="bottom" constant="17" id="Eie-sl-5xj"/>
                             <constraint firstItem="VSq-Pa-4jM" firstAttribute="leading" secondItem="3Kn-rq-90h" secondAttribute="leading" constant="16" id="G5R-yU-46R"/>
+                            <constraint firstItem="RHk-W3-b4w" firstAttribute="leading" secondItem="3Kn-rq-90h" secondAttribute="leading" constant="159" id="Hbs-Hn-Z4i"/>
                             <constraint firstItem="3Kn-rq-90h" firstAttribute="trailing" secondItem="VSq-Pa-4jM" secondAttribute="trailing" constant="16" id="OK2-02-Hoq"/>
+                            <constraint firstItem="RHk-W3-b4w" firstAttribute="top" secondItem="3Kn-rq-90h" secondAttribute="top" constant="631" id="bGe-ha-oLe"/>
+                            <constraint firstItem="RHk-W3-b4w" firstAttribute="bottom" secondItem="3Kn-rq-90h" secondAttribute="bottom" id="lDF-gD-u9J"/>
+                            <constraint firstItem="RHk-W3-b4w" firstAttribute="top" secondItem="O0Y-34-FBH" secondAttribute="bottom" constant="582" id="o80-M7-xU3"/>
+                            <constraint firstItem="3Kn-rq-90h" firstAttribute="trailing" secondItem="RHk-W3-b4w" secondAttribute="trailing" constant="159" id="oUN-zF-Lga"/>
+                            <constraint firstItem="O0Y-34-FBH" firstAttribute="top" secondItem="3Kn-rq-90h" secondAttribute="top" id="w0c-Hx-tcf"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="videos" image="video" catalog="system" id="8kf-qM-63u"/>
                     <connections>
+                        <outlet property="FavVideos" destination="cTc-n3-xG6" id="2HZ-DK-f5N"/>
+                        <outlet property="videosTabBar" destination="O0Y-34-FBH" id="1YO-VF-39H"/>
                         <outlet property="videosTableView" destination="VSq-Pa-4jM" id="mpD-aY-WYQ"/>
+                        <segue destination="zLS-uH-Aef" kind="show" identifier="ToFavVideos" id="Pt4-n1-ZRe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1B-Vo-ef7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2910.6870229007632" y="-499.29577464788736"/>
+        </scene>
+        <!--Fav Videos View Controller-->
+        <scene sceneID="OHC-oc-vD6">
+            <objects>
+                <viewController id="zLS-uH-Aef" customClass="FavVideosViewController" customModule="mediaHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WLx-L6-hkH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eL5-lT-ZK5">
+                                <rect key="frame" x="0.0" y="103" width="393" height="687"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavVideoCell" id="VQ6-Og-ue7">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VQ6-Og-ue7" id="dWd-rr-tss">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zLS-uH-Aef" id="khg-qF-3b9"/>
+                                    <outlet property="delegate" destination="zLS-uH-Aef" id="l1z-QI-4uG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="maa-QI-Rhc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="maa-QI-Rhc" firstAttribute="bottom" secondItem="eL5-lT-ZK5" secondAttribute="bottom" constant="28" id="3Pi-HO-wVl"/>
+                            <constraint firstItem="eL5-lT-ZK5" firstAttribute="top" secondItem="maa-QI-Rhc" secondAttribute="top" id="Ned-fC-pfj"/>
+                            <constraint firstItem="eL5-lT-ZK5" firstAttribute="trailing" secondItem="maa-QI-Rhc" secondAttribute="trailing" id="bU3-0a-G5s"/>
+                            <constraint firstItem="eL5-lT-ZK5" firstAttribute="leading" secondItem="maa-QI-Rhc" secondAttribute="leading" id="dcH-k4-wrD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8PQ-He-0rg"/>
+                    <connections>
+                        <outlet property="favVideosTableView" destination="eL5-lT-ZK5" id="haC-Eg-ye2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLk-zb-Vpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3739.6946564885493" y="-499.29577464788736"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9wr-19-YMX">

@@ -65,8 +65,54 @@ class DataManger{
     }
     
     
+    func addVideoToFav(video:VideoModel){
+        
+        guard  let videoUrl = URL(string:video.url) else{
+            return
+        }
+        VideoManger.shared.saveVideoLocally(videoURL: videoUrl) {(videoName) in
+            if let videoInFolder = videoName {
+                
+                if let entity  = NSEntityDescription.entity(forEntityName: "FavVideo", in: self.persistentContainer.viewContext){
+                    let newfavVideo = NSManagedObject(entity: entity, insertInto: self.persistentContainer.viewContext)
+                    newfavVideo.setValue(videoInFolder, forKey: "url")
+                    
+                    do{
+                        try self.persistentContainer.viewContext.save()
+                        print("added to fav")
+                        
+                    }catch {
+                        
+                        print(error)
+                        
+                    }
+                }
+            }
+        }
+    }
     
     
+    
+    
+    
+    func fetchFavVideos()->[FavVideo]{
+        let request:NSFetchRequest<FavVideo> = FavVideo.fetchRequest()
+        do{
+          let result =   try persistentContainer.viewContext.fetch(request)
+            
+            
+            print("fetched")
+            
+            
+            return result
+            
+            
+        }catch{
+            print(error)
+            
+            return []
+        }
+    }
     
     
     

@@ -9,21 +9,28 @@ import Foundation
 class VideoManger{
     static  let  shared = VideoManger()
 
-    func saveVideoLocally(videoURL: URL) {
+    func saveVideoLocally(videoURL: URL, completion: @escaping (String?) -> Void) {
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let videoName = "video_\(Date().timeIntervalSince1970).mp4"
         let fileURL = documentsURL.appendingPathComponent(videoName)
         
         URLSession.shared.downloadTask(with: videoURL) { (tempLocalURL, response, error) in
             if let tempLocalURL = tempLocalURL, error == nil {
+                
+                
                 do {
                     try FileManager.default.moveItem(at: tempLocalURL, to: fileURL)
+                    completion(videoName)
                 } catch {
                     print("Error saving video: \(error)")
+                    completion(nil)
                 }
+            } else {
+                completion(nil)
             }
         }.resume()
     }
+
 
     // Inside VideoCollectionViewCell
 //    func setupPlayer(videoURL: URL) {
