@@ -67,7 +67,7 @@ class DataManger{
     
     func addVideoToFav(video:VideoModel){
         
-        guard  let videoUrl = URL(string:video.url) else{
+        guard  let videoUrl = URL(string:video.video_files[0].link) else{
             return
         }
         VideoManger.shared.saveVideoLocally(videoURL: videoUrl) {(videoName) in

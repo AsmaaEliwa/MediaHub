@@ -1971,7 +1971,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DD040428-F5EB-4543-BBAF-1E22FF4C749C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
@@ -2019,7 +2019,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3332BEBF-C195-413B-9FA8-490BE2FAF7D3"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
@@ -2067,7 +2067,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "335AD6C0-7A6E-45D2-8733-567369572DBE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
@@ -2131,7 +2131,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DAB57391-BBF3-431E-9A6E-B35F92555988"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mediaHub/Views/Videos/VideoTableViewCell.swift"
@@ -2377,8 +2377,8 @@
             filePath = "mediaHub/Views/Videos/FavVideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "FavVideosViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -2505,8 +2505,56 @@
             filePath = "mediaHub/Views/Videos/FavVideosViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "playVideo(at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "85BB7B2C-5651-4B31-8CF4-190E274D8A24 - 8690377bcfc241e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.FavVideosViewController.playVideo(at: Foundation.URL) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/FavVideosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1529">
+               </Location>
+               <Location
+                  uuid = "85BB7B2C-5651-4B31-8CF4-190E274D8A24 - 8690377bcfc241c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaHub.FavVideosViewController.playVideo(at: Foundation.URL) -&gt; ()"
+                  moduleName = "mediaHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaHub/mediaHub/Views/Videos/FavVideosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "1529">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECCE749A-B7D7-4FD7-8062-32C1B14C4786"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaHub/Views/Videos/FavVideosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "playVideo(at:)"
             landmarkType = "7">
          </BreakpointContent>
