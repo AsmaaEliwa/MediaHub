@@ -7,7 +7,7 @@
 import UIKit
 
 class ImagesViewController: UIViewController, UITabBarDelegate {
-
+    let imageCache = NSCache<NSString, UIImage>()
     @IBOutlet weak var collectionView: UICollectionView!
 
     @IBOutlet weak var tabBar: UITabBar!
@@ -73,20 +73,31 @@ extension ImagesViewController: UICollectionViewDataSource, UICollectionViewDele
         }
         
         let imageURL = images?[indexPath.item].src.medium ?? ""
-        
-        if let url = URL(string: imageURL) {
-            URLSession.shared.dataTask(with: url) { data, _, error in
-                if let data = data, let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        cell.imageView.image = image
-                    }
-                }
-            }.resume()
-        }
-        
-        
-        return cell
-    }
+           
+           if let cachedImage = imageCache.object(forKey: imageURL as NSString) {
+               print("Cache hit for \(imageURL)")
+               cell.imageView.image = cachedImage
+           } else {
+               if let url = URL(string: imageURL) {
+                   URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+                       guard let data = data, let image = UIImage(data: data) else {
+                           return
+                       }
+                       
+                       self?.imageCache.setObject(image, forKey: imageURL as NSString)
+                       
+                       DispatchQueue.main.async {
+                            let visibleIndexPaths = collectionView.indexPathsForVisibleItems
+                           visibleIndexPaths.contains(indexPath)
+                               cell.imageView.image = image
+                           
+                       }
+                   }.resume()
+               }
+           }
+           
+           return cell
+       }
 }
 extension ImagesViewController {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
