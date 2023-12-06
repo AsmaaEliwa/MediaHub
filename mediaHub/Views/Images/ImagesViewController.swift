@@ -87,8 +87,7 @@ extension ImagesViewController: UICollectionViewDataSource, UICollectionViewDele
                        self?.imageCache.setObject(image, forKey: imageURL as NSString)
                        
                        DispatchQueue.main.async {
-                            let visibleIndexPaths = collectionView.indexPathsForVisibleItems
-                           visibleIndexPaths.contains(indexPath)
+
                                cell.imageView.image = image
                            
                        }
