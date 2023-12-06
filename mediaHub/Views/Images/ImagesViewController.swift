@@ -50,9 +50,12 @@ extension ImagesViewController: UICollectionViewDataSource, UICollectionViewDele
             return UICollectionViewCell()
         }
 
-        viewModel.getImage(at: indexPath.item) { image in
+        viewModel.getImage(at: indexPath.item) { data in
             DispatchQueue.main.async {
-                cell.imageView.image = image
+                if let data = data {
+                    cell.imageView.image = UIImage(data: data )
+                }
+               
             }
         }
 
