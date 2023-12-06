@@ -7,9 +7,10 @@
 import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
+    var image: UIImage?
     let imageView: UIImageView = {
         let imageView = UIImageView()
-    
+     
         return imageView
     }()
     let starButton: UIButton = {
